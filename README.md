@@ -5,12 +5,14 @@
 阿里云oss，使用示例：
 
 ```python
+from pyalioss_util import alioss_util
+
 access_key_id = ''
 access_key_secret = ''
 endpoint = 'http://oss-cn-hangzhou.aliyuncs.com'
 bucket_name = ''
 
-oss = AliyunOSS(access_key_id, access_key_secret, endpoint, bucket_name)
+oss = alioss_util.AliyunOSS(access_key_id, access_key_secret, endpoint, bucket_name)
 
 # 上传对象
 object_name = 'test2/docker_test.py'
